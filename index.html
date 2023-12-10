@@ -28,7 +28,7 @@
     <script>
         const tbody = document.querySelector("tbody")
         const getProducts = async () => {
-            const res = await fetch("/productos")
+            const res = await fetch("http://localhost:3000/productos")
             const productos = await res.json()
             return productos
         }
