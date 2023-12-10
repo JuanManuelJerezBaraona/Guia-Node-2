@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.get("/home", (req, res) => {
     res.send("Hello World Express Js")
-    })
+})
 
 app.get("/productos", (req, res) => {
     const productos = JSON.parse(fs.readFileSync("productos.json"));
